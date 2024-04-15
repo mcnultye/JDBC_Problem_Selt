@@ -1,8 +1,6 @@
-import java.io.Console;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
@@ -22,11 +20,9 @@ public class InventoryPresentationLayer {
             // Get database connection details from InventoryPresentationLayer
             InventoryManagerDAL inventoryDAL = InventoryPresentationLayer.GetDal();
 
-            // Instantiate BusinessLogic class
-            InventoryBusinessLogic businessLogic = new InventoryBusinessLogic();
-
             // Scanner for user input
             Scanner scanner = new Scanner(System.in);
+
 
         int choice;
         while (true) {
